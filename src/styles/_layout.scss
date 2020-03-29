@@ -1,4 +1,9 @@
 @import 'reset';
+@import 'variables';
+
+html, body {
+  height: 100%;
+}
 
 body {
   font-family: 'Soleil', sans-serif;
