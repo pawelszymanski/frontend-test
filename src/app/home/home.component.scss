@@ -1,0 +1,71 @@
+$unit: 16px;
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  height: $unit * 5;
+  padding: 0 ($unit * 2.5);
+  .logo {
+    height: $unit;
+    width: $unit * 7;
+    background: url("./../../assets/cobiro-logo.svg") left no-repeat;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    img {
+      display: inline-block;
+      width: $unit * 2;
+      height: $unit * 2;
+      border-radius: 100%;
+    }
+    p {
+      font-weight: 600;
+      color: #002D4F;
+      padding: ($unit / 4) ($unit * 3 / 2) ($unit / 4) ($unit / 2);
+      margin-left: $unit / 2;
+      cursor: pointer;
+      position: relative;
+      &:before, &:after {
+        content: '';
+        position: absolute;
+        top: $unit * 3 / 4;
+        right: ($unit / 2);
+        width: $unit / 2;
+        height: $unit / 4;
+        background: url("./../../assets/icon-chevron-down.svg") center no-repeat;
+        transition: top 100ms ease-out;
+      }
+      &:hover {
+        &:after {
+          top: $unit;
+        }
+      }
+    }
+  }
+}
+
+.sidebar {
+  background: pink;
+  img {}
+  p {}
+  ul {
+    li {
+
+    }
+  }
+}
+
+.content {
+  input {}
+  ul {
+    li {
+      span {}
+      button {}
+    }
+  }
+}
+
