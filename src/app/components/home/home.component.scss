@@ -1,5 +1,5 @@
-@import './../../styles/variables';
-@import './../../styles/mixins';
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
 
 :host {
   display: flex;
@@ -22,7 +22,7 @@
   .logo {
     height: $unit;
     width: $unit * 7;
-    background: url("./../../assets/cobiro-logo.svg") left no-repeat;
+    background: url("../../../assets/cobiro-logo.svg") left no-repeat;
   }
 
   .menu {
@@ -36,7 +36,7 @@
     }
     p {
       font-weight: 600;
-      color: #002D4F;
+      color: #002d4f;
       padding: ($unit / 4) ($unit * 3 / 2) ($unit / 4) ($unit / 2);
       margin-left: $unit / 2;
       cursor: pointer;
@@ -49,7 +49,7 @@
         right: ($unit / 2);
         width: $unit / 2;
         height: $unit / 4;
-        background: url("./../../assets/icon-chevron-down.svg") center no-repeat;
+        background: url("../../../assets/icon-chevron-down.svg") center no-repeat;
         transition: top 100ms ease-out;
       }
       &:hover {
@@ -110,7 +110,7 @@
       right: $unit;
       width: $unit;
       height: $unit;
-      background: url("./../../assets/icon-zoom.svg") center no-repeat;
+      background: url("../../../assets/icon-zoom.svg") center no-repeat;
     }
     input {
       width: 100%;
@@ -161,5 +161,14 @@
         width: calc(100% - (#{$unit} * 5 / 4 )* #{$i});
       }
     }
+  }
+  p {
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    color: #00124F;
+    opacity: .15;
+    font-size: 24px;
+    padding: $unit * 2;
   }
 }

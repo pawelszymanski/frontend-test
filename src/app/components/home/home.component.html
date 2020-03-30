@@ -1,0 +1,35 @@
+<div class="header">
+  <div class="logo"></div>
+  <div class="menu">
+    <img src="../../../assets/avatar.png">
+    <p>Paweł</p>
+  </div>
+</div>
+
+<div class="sidebar">
+  <img src="../../../assets/customer-screenshot.png">
+  <p>hairstylist.com</p>
+  <ul>
+    <li>Marketing Plan</li>
+    <li>Dashboard</li>
+    <li>My Ads</li>
+    <li>Analytics</li>
+    <li>Cobiro Store</li>
+  </ul>
+</div>
+
+<div class="content">
+  <form>
+    <input type="text" name="search" placeholder="Search" [(ngModel)]="search">
+  </form>
+  <ul>
+    <li *ngFor="let item of filteredItems()" [class]="'indent-' + item.depth">
+      <span>{{ item.title }}</span>
+      <button>Button</button>
+    </li>
+  </ul>
+  <p>
+    <ng-container *ngIf="search">No results to show</ng-container>
+    <ng-container *ngIf="!search">No data to show</ng-container>
+  </p>
+</div>
